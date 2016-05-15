@@ -1,3 +1,24 @@
-console.log('HELLO WORLD');
-console.log('HELLO AGAIN');
-console.log('HELLO AGAIN X 2');
+var model = {
+  init: function() {
+    console.log('Model initialized');
+  }
+};
+
+var helper = {
+
+};
+
+var view = {
+  init: function() {
+    console.log('View initialized');
+  }
+};
+
+var app = {
+  init: function() {
+    model.init();
+    view.init();
+  }
+};
+
+app.init();
