@@ -23,7 +23,7 @@ gulp.task('templates', function(){
    return gulp.src(['src/templates/**/*.hbs', '!src/templates/partials/**/*.hbs'])
     .pipe(handlebars(data, options))
     .pipe(rename(function (path) {
-      path.extname = '.html'
+      path.extname = '.html';
     }))
     .pipe(gulp.dest('./'));
 });
